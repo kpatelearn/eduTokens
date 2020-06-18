@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ENG1.2</title>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="./web3.min.js"></script>
+    <script type="text/javascript" src="./human_standard_token_abi.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <div class="center" id="stuAccess">
+        <h1>ENG 1.2 - Essay</h1>
+        <p>Enter your Student Address and password:</p>
+        <p>Address: <input type="text" size="50" id="address"/></p>
+        <p>Password: <input type="text" size="50" id="studentPassword"/></p>
+        <p id="currentMessage"></p>
+        <div class="center">
+            <button id="check" type="button" onClick="studentAccess();"> Check access </button>
+        </div>
+    </div>
+
+    <div class="center" id="showTest">
+        <h1>English Test</h1>
+        <p>Answer the following questions.</p>
+        <ul style=list-style:none>
+            <li style="color: antiquewhite;">1. Describe something <input id="Qn1"></li> 
+            <li style="color: antiquewhite;">2. Explain something <input id="Qn2"></li>
+            <li style="color: antiquewhite;">3. Discuss something <input id="Qn3"></li>
+        </ul>
+        <button onClick="markNow();">Submit answers</button>
+    </div>
+
+    <div class ="center" id="markTest">
+        <p>Teacher - mark the test with:<br>Either 'A' or not for Qn1, 'M' or not for Qn2, and 'E' or not for question 3</br></p>
+        <ul style=list-style:none>
+            <li style="color: antiquewhite;">1. <input size ="5" id="grade1"></li> 
+            <li style="color: antiquewhite;">2. <input size ="5" id="grade2"></li>
+            <li style="color: antiquewhite;">3. <input size = "5" id="grade3"></li>
+        </ul>
+        <button id="submit">JavaScript Grade</button>
+        <p id="printResult"></p>
+        <script>
+            const question1 = document.querySelector("#grade1");
+            const question2 = document.querySelector("#grade2");
+            const question3 = document.querySelector("#grade3");
+            const printResult = document.querySelector("#printResult");
+
+            submit.addEventListener("click", mark);
+
+            function mark() {
+                var score = 0;
+                var gradeJ = "Pending";
+                if (question1.value == "A") {
+                    score += 1;
+                }
+                if (question2.value == "M") {
+                    score += 3;
+                }
+                if (question3.value == "E") {
+                    score += 5;
+                }
+                if (score == 1) {
+                    gradeJ = "Achieved";
+                }
+                else if (score == 3 || score == 4) {
+                    gradeJ = "Merit";
+                }
+                else if (score == 5 || score == 6 || score == 8 || score == 9) {
+                    gradeJ = "Excellence"
+                }
+
+                printResult.innerHTML = gradeJ;
+            };
+        </script>
+        <div class="center">
+            <button type="button" onClick="getERC20Balance();"> Blockchain grade </button>
+            <p>(Can only be altered by assessment provider)</p>
+        </div>
+
+    <div id="output2"></div>
+    </div>
+
+    <script type="text/javascript" src="./eng.js"></script>
+
+</body>
+</html>
