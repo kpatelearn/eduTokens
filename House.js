@@ -22,7 +22,7 @@ const promisify = (inner) =>
 
 
 async function getH() {
-    var addressH, addressG, addressR, addressS, contractAddress, contractABI, tokenContract, decimals, balance, name, adjustedBalance
+    var addressH, addressG, addressR, addressS, contractAddress, contractABI, tokenContract, decimals,
     addressH = "0x0dD3991DAd9788CA3E1A630415d3b2CAf1060487";
     addressG = "0x651892F717e4A1664F5F04476b1935Fa9ca78138";
     addressS = "0x7A6949237cF04b11a2fCf04A0267142C8d7951cF";
