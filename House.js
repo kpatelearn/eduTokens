@@ -5,7 +5,6 @@ window.addEventListener('load', function () {
     } else {
         console.log('No Web3 Detected... using HTTP Provider')
         window.web3 = new Web3(new Web3.providers.HttpProvider("https://rinkeby.infura.io/v3/5b5495ebc3bb41f98d7bf9abda4fca6c"));
-    getH();
     }
 })
 
