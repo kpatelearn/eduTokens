@@ -2,7 +2,7 @@
 
 Two separate ERC20 tokens have been created called EDU Scores (EDU) and another called ED2. 
 The EDU contract address is 0xb58e0bf63fbe4e5565ab719d3369058707ab6a02
-The ED2 contract address is 0x7a358856Ef91F5CF4bb250254E3A60B0aF4038A0
+and the ED2 contract address is 0x7a358856Ef91F5CF4bb250254E3A60B0aF4038A0
 
 For the purposes of demonstration, EDU represents a Maths test and ED2 represents an English test.  
 
