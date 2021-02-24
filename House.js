@@ -22,10 +22,10 @@ const promisify = (inner) =>
 
 async function getH() {
     var addressH, addressG, addressR, addressS, contractAddress, contractABI, tokenContract, decimals,
-    addressH = "0x0dD3991DAd9788CA3E1A630415d3b2CAf1060487";
+    addressH = "0xF8ab97C6f11b80b9de26Eae1a10039eDD66318Ae";
     addressG = "0x651892F717e4A1664F5F04476b1935Fa9ca78138";
     addressS = "0x7A6949237cF04b11a2fCf04A0267142C8d7951cF";
-    addressR = "0xACdFC09bbFe426fFA8B262471d066b65a43335A4";
+    addressR = "0x0dD3991DAd9788CA3E1A630415d3b2CAf1060487";
 
     contractAddress = "0xb58e0bf63fbe4e5565ab719d3369058707ab6a02";
     contractABI = human_standard_token_abi
@@ -47,10 +47,10 @@ async function getH() {
         const g = document.querySelector("#g");
         const s = document.querySelector("#s");
         const r = document.querySelector("#r");
-        h.innerHTML = "Hufflepuff <br>" + adjustedBalanceH + "</br>";
-        g.innerHTML = "Gryffindor <br>" + adjustedBalanceG + "</br>";
-        s.innerHTML = "Slytherin <br>" + adjustedBalanceS + "</br>";
-        r.innerHTML = "Ravenclaw <br>" + adjustedBalanceR + "</br>";
+        h.innerHTML = "Colin <br>" + adjustedBalanceH + "</br>";
+        g.innerHTML = "Champagnat <br>" + adjustedBalanceG + "</br>";
+        s.innerHTML = "Chavoin <br>" + adjustedBalanceS + "</br>";
+        r.innerHTML = "Chanel <br>" + adjustedBalanceR + "</br>";
         
     } catch (error) {
         h.innerHTML = error;
